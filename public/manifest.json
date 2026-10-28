@@ -1,0 +1,17 @@
+{
+  "name": "EcoFreak AI",
+  "short_name": "EcoFreak",
+  "description": "Waste today. A cleaner tomorrow. Hybrid AI waste classification and environmental field journal.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F0E3",
+  "theme_color": "#2F4F35",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

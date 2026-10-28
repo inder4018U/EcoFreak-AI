@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #C8AC85;
+    background-image: 
+      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 60%),
+      radial-gradient(#b89972 1px, transparent 1px);
+    background-size: 100% 100%, 24px 24px;
+    color: #262426;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Washi tape strip */
+.washi-tape {
+  position: absolute;
+  height: 22px;
+  background: rgba(246, 235, 212, 0.78);
+  box-shadow: 0 1px 3px rgba(70, 50, 30, 0.15);
+  backdrop-filter: blur(1px);
+  z-index: 20;
+  border-left: 2px dashed rgba(160, 130, 95, 0.35);
+  border-right: 2px dashed rgba(160, 130, 95, 0.35);
+  pointer-events: none;
+}
+
+.tape-top {
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 90px;
+}
+
+.tape-corner-left {
+  top: -8px;
+  left: -12px;
+  transform: rotate(-35deg);
+  width: 65px;
+}
+
+.tape-corner-right {
+  top: -8px;
+  right: -12px;
+  transform: rotate(35deg);
+  width: 65px;
+}
+
+/* Rubber Stamp Styling */
+.rubber-stamp {
+  font-family: 'Special Elite', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 2px dashed currentColor;
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-2deg);
+  user-select: none;
+}
+
+.stamp-green {
+  border-color: #2F4F35;
+  color: #2F4F35;
+}
+
+.stamp-rust {
+  border-color: #B85C38;
+  color: #B85C38;
+}
+
+.stamp-olive {
+  border-color: #6D7F4F;
+  color: #6D7F4F;
+}
+
+.stamp-charcoal {
+  border-color: #3F3C3A;
+  color: #3F3C3A;
+}
+
+/* Polaroid specimen card */
+.polaroid-frame {
+  background: #FAF6EE;
+  padding: 10px 10px 24px 10px;
+  box-shadow: 0 8px 24px -4px rgba(45, 35, 25, 0.22), 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(200, 180, 150, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid-frame:hover {
+  transform: translateY(-2px) rotate(0.5deg);
+  box-shadow: 0 12px 28px -4px rgba(45, 35, 25, 0.28);
+}
+
+/* Handwritten annotation */
+.handwritten {
+  font-family: 'Caveat', cursive;
+  line-height: 1.15;
+}
+
+/* Parchment paper texture card */
+.parchment-sheet {
+  background: #FAF6EE;
+  background-image: 
+    radial-gradient(ellipse at top left, rgba(255,255,255,0.7), transparent 70%),
+    radial-gradient(circle at 80% 20%, rgba(205, 176, 137, 0.08), transparent 40%);
+  border: 1px solid rgba(190, 165, 130, 0.45);
+  box-shadow: 0 6px 25px -4px rgba(50, 40, 30, 0.16), 0 2px 6px -1px rgba(50, 40, 30, 0.08);
+}
+
+/* Scanning beam animation for viewfinder */
+@keyframes fieldScan {
+  0% { top: 6%; opacity: 0.9; }
+  50% { top: 88%; opacity: 1; }
+  100% { top: 6%; opacity: 0.9; }
+}
+
+.animate-field-scan {
+  animation: fieldScan 2s ease-in-out infinite;
+}
+
+/* Clean scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(205, 176, 137, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(93, 79, 65, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(47, 79, 53, 0.6);
+}

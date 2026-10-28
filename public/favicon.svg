@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="30" fill="#2F4F35" stroke="#FAF6EE" stroke-width="2" stroke-dasharray="2 2"/>
+  <circle cx="32" cy="32" r="26" fill="#F8F0E3" stroke="#2F4F35" stroke-width="1.5"/>
+  <!-- stylized globe / recycling arrows -->
+  <path d="M32 14c-9.94 0-18 8.06-18 18s8.06 18 18 18 18-8.06 18-18S41.94 14 32 14zm-2 4.12A13.93 13.93 0 0 1 42.4 24H35.8c-.56-2.2-1.8-4.14-3.8-5.88zM24 32c0-1.4.2-2.74.56-4h14.88c.36 1.26.56 2.6.56 4 0 1.4-.2 2.74-.56 4H24.56A13.78 13.78 0 0 1 24 32zm7.8 13.88c-2-1.74-3.24-3.68-3.8-5.88h7.6c-.56 2.2-1.8 4.14-3.8 5.88z" fill="#6D7F4F" opacity="0.65"/>
+  <!-- Leaf sprout emblem -->
+  <path d="M32 20c-5 0-9 4-9 9 0 6 7 13 9 15 2-2 9-9 9-15 0-5-4-9-9-9z" fill="#2F4F35"/>
+  <path d="M32 24v16M28 29c2 1 4 0 4 0M36 34c-2 1-4 0-4 0" stroke="#F8F0E3" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
