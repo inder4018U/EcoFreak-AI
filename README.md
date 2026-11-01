@@ -136,3 +136,4 @@ GROQ_API_KEY=gsk_your_groq_api_key_here
 ## 📄 License
 
 © 2026 EcoFreak AI. Personal and educational use.
+Made with love by Inder, Sachin, Shub.
